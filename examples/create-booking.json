@@ -41,7 +41,8 @@
             "totalCostNetOfDiscount": 3214.21,
             "totalDueOnDeal": 25.36,
             "totalPaid": 325.01,
-            "returnDate": "2015-10-11"
+            "returnDate": "2015-10-11",
+            "transactionDate": "2014-10-22"
         },
         "manifestsCombined": [
             {
@@ -104,5 +105,5 @@
         "tourOperatorBookingRef": "H123456G",
         "value": 200
     },
-    "urn": "${Properties#booking-reference}"
+    "urn": "ABCD"
 }]
