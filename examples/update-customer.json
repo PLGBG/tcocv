@@ -1,0 +1,28 @@
+[
+  {
+    "op": "replace",
+    "path": "identity/surname",
+    "value": "Smith"
+  },
+  {
+    "op": "add",
+    "path": "addresses",
+    "value": {
+      "type": "HOME",
+      "contactable": "Y",
+      "lines": [
+        "44 LIDDEL WAY",
+        "CHANDLER'S FORD",
+        "SO53 4QG"
+      ],
+      "townCity": "CHANDLER'S FORD",
+      "postcode": "SO53 4QG",
+      "country": "GBR",
+      "capture": {
+        "urn": 333,
+        "createdDate": "01/01/2017",
+        "modifiedDate": "01/01/2017"
+      }
+    }
+  }
+]

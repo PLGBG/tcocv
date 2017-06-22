@@ -6,6 +6,7 @@
             "product": "A New Product",
             "reference": "385060000",
             "returnDate": "2016-08-11",
+            "departureDate": "2016-09-12",
             "systemIdentifier": "ATCORE",
             "tourOperatorBookingRef": "385060000",
             "transactionDate": "2015-01-12",

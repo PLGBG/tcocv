@@ -124,6 +124,9 @@ baseUri: http://server/api/{version}/tcocv
              
     patch:
       description: This allows elements of the customer resource to be updated or added to
+      body:
+        application/json:
+          example: !include examples/update-customer.json
       responses:
         200:
           headers:

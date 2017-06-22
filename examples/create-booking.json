@@ -12,6 +12,7 @@
             }
         ],
         "dealFields": {
+            "abta": "L5876",
             "amountDueDate": "22-FEB-16",
             "bookingReference": "5300/12345668",
             "brochureCode": "BC",
@@ -83,27 +84,6 @@
                 "startTime": "12-28-32"
             }
         ]
-    },
-    "summary": {
-        "ancillaries": {
-            "airportHotel": "N",
-            "airportLounge": "N",
-            "airportParking": "Y",
-            "carHire": "Y",
-            "excursions": "Y",
-            "foreignExchange": "N",
-            "insurance": "Y",
-            "transfers": "N"
-        },
-        "consultant": "cosultant",
-        "destination": "Marocco",
-        "operator": "OP1",
-        "passengers": 1,
-        "product": "product",
-        "reference": "1",
-        "status": "ACTIVE",
-        "tourOperatorBookingRef": "H123456G",
-        "value": 200
     },
     "urn": "ABCD"
 }]
