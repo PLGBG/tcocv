@@ -102,6 +102,14 @@ baseUri: http://server/api/{version}/tcocv
           404:
             description: The request was successful but no customer was found with that handover code
   /{customerID}:
+    put:
+      description: Updates a customer
+    body:
+      application/json:
+        example: !include examples/update-customer-put.json
+    responses:
+      200:
+        description: The customer was updated successfully
     get:
       description: Gets the specific customer information for this identifier
       responses:
@@ -324,31 +332,37 @@ baseUri: http://server/api/{version}/tcocv
                 example: !include examples/bookings.json
           404:
               description: The customer belonging to id provided could not be found   
-      /booking:      
-        /detail:
-          post:
-            description: Creates a booking, this will not interact with the summary block
+      post:
+        description: Creates a booking, this will not interact with the summary block
+        body:
+          application/json:
+            example: !include examples/create-booking.json
+        responses:
+          201:
+            description: The booking was created succesfully
+          400:
+            description: The request failed validation
+          403:
+            description: The access failed authentication
             body:
               application/json:
-                example: !include examples/create-booking.json
-            responses:
-              201:                
-                description: The booking was created succesfully                
-              400:
-                description: The request failed validation                 
-              403:
-                description: The access failed authentication
-                body:
-                  application/json:
-                    example: !include examples/security.json                                                  
-              404:
-                description: The customer belonging to id provided could not be found
-                body:
-                  application/json:
-                    example: !include examples/create-booking-not-found.json
-              409:
-                description: The bookingId already exists                
+                example: !include examples/security.json
+          404:
+            description: The customer belonging to id provided could not be found
+            body:
+              application/json:
+                example: !include examples/create-booking-not-found.json
+          409:
+            description: The bookingId already exists
       /{bookingID}:
+        put:
+          description: Updates a booking, this will not interact with the summary block
+        body:
+          application/json:
+            example: !include examples/update-booking-put.json
+        responses:
+          200:
+            description: The booking was updated successfully
         /detail:
           /dealFields:
             patch:
@@ -362,7 +376,7 @@ baseUri: http://server/api/{version}/tcocv
                   description: The access failed authentication
                   body:
                     application/json:
-                      example: !include examples/security.json 
+                      example: !include examples/security.json
                 404:
                   description: The booking ID or customer does not exist
                   body:
@@ -470,31 +484,37 @@ baseUri: http://server/api/{version}/tcocv
                   {}
           404:
               description: The customer belonging to ID provided could not be found   
-      /enquiry:      
-        /detail:
-          post:
-            description: Creates an enquiry, this will not interact with the summary block
+      post:
+        description: Creates an enquiry, this will not interact with the summary block
+        body:
+          application/json:
+            example: !include examples/create-enquiry.json
+        responses:
+          201:
+            description: The enquiry was created succesfully
+          400:
+            description: The request failed validation
+          403:
+            description: The access failed authentication
             body:
               application/json:
-                example: !include examples/create-enquiry.json
-            responses:
-              201:                
-                description: The enquiry was created succesfully                
-              400:
-                description: The request failed validation                 
-              403:
-                description: The access failed authentication
-                body:
-                  application/json:
-                    example: !include examples/security.json                                                  
-              404:
-                description: The customer belonging to ID provided could not be found
-                body:
-                  application/json:
-                    example: !include examples/create-enquiry-not-found.json
-              409:
-                description: The enquiryID already exists                
+                example: !include examples/security.json
+          404:
+            description: The customer belonging to ID provided could not be found
+            body:
+              application/json:
+                example: !include examples/create-enquiry-not-found.json
+          409:
+            description: The enquiryID already exists
       /{enquiryID}:
+        put:
+          description: Updates an enquiry, this will not interact with the summary block
+        body:
+          application/json:
+            example: !include examples/update-enquiry-put.json
+        responses:
+          200:
+            description: The enquiry was updated successfully
         /detail:
           /dealFields:
             patch:
