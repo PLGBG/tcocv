@@ -8,6 +8,7 @@
             "returnDate": "2016-08-11",
             "departureDate": "2016-09-12",
             "systemIdentifier": "ATCORE",
+            "status": "Booking",
             "tourOperatorBookingRef": "385060000",
             "transactionDate": "2015-01-12",
             "transactionID": "385060000",
