@@ -1,0 +1,86 @@
+{
+    "detail": {
+        "consultationRef": "ABCD",
+        "costings": [
+            {
+                "costCode": "OC",
+                "costUnitValue": 12.35,
+                "costingSequenceNumber": "1354",
+                "description": "Operator cost",
+                "netCost": 10.32,
+                "quantityInvolved": 2
+            }
+        ],
+        "dealFields": {
+            "amountDueDate": "22-FEB-16",
+            "bookingReference": "5300/12345668",
+            "brochureCode": "BC",
+            "brochureCodeDescription": "BCDesc",
+            "dateDealCancelled": "2016-06-26",
+            "dateDealConfirmed": "2016-05-26",
+            "dealSequenceNumber": "1",
+            "dealStatusCode": "DSC",
+            "dealStatusCodeDescription": "DSCDesc",
+            "departureDate": "2016-10-26",
+            "depositAmount": 123.21,
+            "depositDueDate": "2016-09-26",
+            "lowDepositFlag": "Y",
+            "majorDestination": "LHR",
+            "numberOfAdults": 2,
+            "numberOfChildren": 1,
+            "numberOfInfants": 1,
+            "numberOfSeniorCitizens": 2,
+            "operatorCode": "OP",
+            "operatorCodeDescription": "OPDesc",
+            "productCode": "PC",
+            "productCodeDescription": "PCDesc",
+            "productTypeCode": "PTC",
+            "productTypeCodeDescription": "PTCDesc",
+            "staffEmployeeNumber": "nmb",
+            "totalCostGross": 1354.21,
+            "totalCostNetOfDiscount": 3214.21,
+            "totalDueOnDeal": 25.36,
+            "totalPaid": 325.01
+        },
+        "manifestsCombined": [
+            {
+                "age": 25,
+                "dateOfBirth": "1982-05-26",
+                "firstName": "Doe",
+                "leadPassengerFlag": "Y",
+                "manifestSequenceNumber": "123564",
+                "manifestType": "type",
+                "passengerIncludeFlag": "Y",
+                "passportTypeCode": "UK",
+                "surname": "Jhon",
+                "title": "Mr"
+            }
+        ],
+        "travelLegs": [
+            {
+                "ISOCountryCodeArrival": "UA",
+                "ISOCountryCodeArrivalDescription": "UADesc",
+                "ISOCountryCodeDeparture": "US",
+                "ISOCountryCodeDepartureDescription": "USDesc",
+                "airlineName": "British Airwaivs",
+                "boardBasis": "AllInclusive",
+                "boardBasisDescription": "BSDesc",
+                "cruiseShipName": "Queen Victoria",
+                "description": "resortDesc",
+                "durationDays": 12,
+                "endDate": "2016-05-26",
+                "endTime": "12-28-32",
+                "legType": "type",
+                "locationCodeArrival": "US",
+                "locationCodeDeparture": "locationCode",
+                "locationCodeDepartureDescription": "LCDesc",
+                "propertyCodeOrFlightNumber": "12OCD",
+                "propertyNameOrDestinationName": "13OCD",
+                "sequenceNumber": "13545",
+                "startDate": "2016-05-26",
+                "startTime": "12-28-32"
+            }
+        ]
+    },
+    "urn": "ABCD"
+}

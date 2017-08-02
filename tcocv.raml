@@ -121,7 +121,18 @@ baseUri: http://server/api/{version}/tcocv
           body:
             application/json:
               example: !include examples/security.json                      
-             
+    put:
+      description: Creates or updates a Customer with specified gbgID
+      body:
+        application/json:
+          example: !include examples/put-customer.json
+      responses:
+        200:
+          description: The customer was updated
+        201:
+          description: The customer was created
+        400:
+          description: The request was invalid
     patch:
       description: This allows elements of the customer resource to be updated or added to
       body:
@@ -349,6 +360,18 @@ baseUri: http://server/api/{version}/tcocv
               409:
                 description: The bookingId already exists                
       /{bookingID}:
+        put:
+          description: Creates or updates a Booking with specified bookingID
+          body:
+            application/json:
+              example: !include examples/put-booking.json
+          responses:
+            200:
+              description: The booking was updated
+            201:
+              description: The booking was created
+            400:
+              description: The request was invalid
         /detail:
           /dealFields:
             patch:
@@ -495,6 +518,18 @@ baseUri: http://server/api/{version}/tcocv
               409:
                 description: The enquiryID already exists                
       /{enquiryID}:
+        put:
+          description: Creates or updates an Enquiry with specified enquiryID
+          body:
+            application/json:
+              example: !include examples/put-enquiry.json
+          responses:
+            200:
+              description: The enquiry was updated
+            201:
+              description: The enquiry was created
+            400:
+              description: The request was invalid
         /detail:
           /dealFields:
             patch:
