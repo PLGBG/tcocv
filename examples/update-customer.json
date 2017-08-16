@@ -24,5 +24,46 @@
         "modifiedDate": "01/01/2017"
       }
     }
+  },
+  {
+    "op": "add",
+    "path": "socials",
+    "value": {
+        "type": "Google",
+        "value": "google.ca",
+        "contactable": "Y",
+        "capture": {
+          "urn": 333,
+          "createdDate": "2015-05-01T00:48:15Z",
+          "modifiedDate": "1996-06-23T00:48:15Z",
+          "lastUpdatedBy": "SOME_PERSON"
+        }
+      }
+  },
+  {
+    "op": "replace",
+    "path": "socials/0",
+    "value": {
+        "type": "Google",
+        "value": "google.ca",
+        "contactable": "Y",
+        "capture": {
+          "urn": 333,
+          "createdDate": "2015-05-01T00:48:15Z",
+          "modifiedDate": "1996-06-23T00:48:15Z",
+          "lastUpdatedBy": "SOME_PERSON"
+        }
+      }
+  },
+  {
+    "op": "add",
+    "path": "identity/middlenames/-",
+    "value": "Terence"
+  },
+  {
+    "op": "replace",
+    "path": "identity/middlenames/0",
+    "value": "Terence"
   }
+  
 ]
