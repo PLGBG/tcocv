@@ -26,21 +26,66 @@
         "type": "HOME",
         "contactable": "Y",
         "lines": [
-          "48 Moose Street",
-          "65 Bowman Trail",
-          "8 Oak Valley Hill",
-          "0063 Mayer Hill"
+          "12 KIRKVIEW CT",
+		  "BALLYMONEY",
+		  "BT53 6SB",
+		  "BALLYMONEY"
         ],
-        "townCity": "Satsumasendai",
-        "county": "Bath and North East Somerset",
-        "postcode": null,
-        "country": "Japan",
+        "townCity": "BALLYMONEY",
+        "county": "CO ANTRIM",
+        "postcode": "BT53 6SB",
+        "country": "Northern Ireland",
         "capture": {
           "urn": 333,
           "createdDate": "2015-05-01T00:48:15Z",
           "modifiedDate": "1996-06-23T00:48:15Z",
           "lastUpdatedBy": "SOME_PERSON"
-        }
+        },
+		"addressEnrichments":{
+		  "pafAddress":{
+			"matchScore":80,
+			"matchLevel":3,
+			"outputPostcodeLevel":5,
+			"buildingNo":"12",
+			"street":"KIRKVIEW COURT",
+			"town":"BALLYMONEY",
+			"county":"CO ANTRIM",
+			"postcode":"BT536SB",
+			"udprn":"03642388"
+		  },
+		  "cleansedAddress":{
+			"addressID":"9f1563e285de6454eb442fc947fc9586",
+			"lines":[
+			  "12 KIRKVIEW CT",
+			  "BALLYMONEY",
+			  "BT53 6SB",
+			  ""
+			],
+			"postcode":"BT536SB",
+			"country":"N IRELAND",
+			"geokey":{
+			  "place":{
+				"countryCode":"ENGLAND",
+				"townCodeKey":"00087",
+				"localityCodeKey":"00000",
+				"postcodeKey":"0603936"
+			  },
+			  "location":{
+				"streetCodeKey":"K62100",
+				"streetType":"CT",
+				"maxNo":"30303132",
+				"minNo":"30303132",
+				"otherKey":"30303132",
+				"streetName":"KIRKVIEW"
+			  }
+			},
+			"capture":{
+			  "urn":333,
+			  "createdDate":"01/01/2015",
+			  "modifiedDate":"01/01/2015"
+			}
+		  }
+		}
       }
     ],
     "emails": [
