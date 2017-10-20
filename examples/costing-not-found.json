@@ -1,8 +1,8 @@
 {
-	"errors": [
-		{
-			"code": 1012,
-			"condition": "Costings not found"
-		}
-	]
+    "errors": [
+        {
+            "code": 1012,
+            "condition": "Costings doesn't exist"
+        }
+    ]
 }

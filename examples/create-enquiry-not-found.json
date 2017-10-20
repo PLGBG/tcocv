@@ -2,11 +2,8 @@
     "errors": [
         {
             "code": 1009,
-            "location": "Create Enquiry",
-            "condition": "This can occur when Create Enquiry is requested for a customer id that does not match any customers",
-            "rationale": "Its possible for the customer id being passed in to be incorrect or corrupted. ",
-            "errorMessage": "The customer you are updating does not exist.  Please recheck the customer id you provided is correct.  The customer id you provided was <XXXX>",
-            "actionNeeded": "Please check that the customer id is correct to what was retrieved.  A ticket has been raised within GBG to confirm if this customer id exists."
+            "errorMessage": "The customer you are updating does not exist.  Please check the customer ID you provided is correct.  The customer ID you provided was 1234abcd.",
+            "location": "Create Enquiry"
         }
     ]
 }

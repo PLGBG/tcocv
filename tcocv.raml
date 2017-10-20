@@ -56,7 +56,6 @@ baseUri: http://server/api/{version}/tcocv
         description: The request failed validation.  The exact errors are captured in the JSON response
         body:
           application/json:
-            example: !include examples/create-invalid.json
       403:
         description: The access failed authentication
         body:
@@ -164,7 +163,6 @@ baseUri: http://server/api/{version}/tcocv
             description: The request was successful
             body:
               application/json:
-                example: !include examples/stats.json
           204:
             description: The request was succesful but no customer was found with that ID. An empty element is returned
             body:
@@ -204,7 +202,6 @@ baseUri: http://server/api/{version}/tcocv
             description: The request was successful
             body:
               application/json:
-                example: !include examples/communications.json
           204:
             description: The request was succesful but no customer was found with that ID.  An empty element is returned
             body:
@@ -224,7 +221,6 @@ baseUri: http://server/api/{version}/tcocv
             description: The request was successful and preferences have been found
             body:
               application/json:
-                example: !include examples/preferences.json
           204:
             description: The request was succesful but no preferences were found.  An empty element is returned
             body:
@@ -307,7 +303,6 @@ baseUri: http://server/api/{version}/tcocv
             description: The request was successful
             body:
               application/json:
-                example: !include examples/marketing-options.json
           204:
             description: The request was succesful but no customer was found with that ID. An empty element is returned
             body:
