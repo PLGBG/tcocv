@@ -46,6 +46,7 @@ baseUri: http://server/api/{version}/tcocv
       systemID: 
         description: Identifies which system is initiating this request.  Either WebRio or MSD.
         required: true
+        type: string
     description: Creates a new customer resource. This will contain their personal information, address and other contact information    
     body:
       application/json:
@@ -130,6 +131,7 @@ baseUri: http://server/api/{version}/tcocv
         systemID: 
           description: Identifies which system is initiating this request.  Either WebRio or MSD.
           required: true
+          type: string
       body:
         application/json:
           example: !include examples/put-customer.json
@@ -146,6 +148,7 @@ baseUri: http://server/api/{version}/tcocv
         systemID: 
           description: Identifies which system is initiating this request.  Either WebRio or MSD.
           required: true
+          type: string
       body:
         application/json:
           example: !include examples/update-customer.json
