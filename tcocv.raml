@@ -42,6 +42,10 @@ baseUri: http://server/api/{version}/tcocv
           application/json:
             example: !include examples/security.json     
   post:
+    queryParameters: 
+      systemID: 
+        description: Identifies which system is initiating this request.  Either WebRio or MSD.
+        required: true
     description: Creates a new customer resource. This will contain their personal information, address and other contact information    
     body:
       application/json:
@@ -122,6 +126,10 @@ baseUri: http://server/api/{version}/tcocv
               example: !include examples/security.json                      
     put:
       description: Creates or updates a Customer with specified gbgID
+      queryParameters: 
+        systemID: 
+          description: Identifies which system is initiating this request.  Either WebRio or MSD.
+          required: true
       body:
         application/json:
           example: !include examples/put-customer.json
@@ -134,6 +142,10 @@ baseUri: http://server/api/{version}/tcocv
           description: The request was invalid
     patch:
       description: This allows elements of the customer resource to be updated or added to
+      queryParameters: 
+        systemID: 
+          description: Identifies which system is initiating this request.  Either WebRio or MSD.
+          required: true
       body:
         application/json:
           example: !include examples/update-customer.json
