@@ -290,26 +290,6 @@ baseUri: http://server/api/{version}/tcocv
             body:
               application/json:
                 example: !include examples/security.json
-      patch:
-        description: Updates a recomendation based on the cusotmers response
-        responses:
-          200:
-            description: The request was successful
-            body:
-              application/json:
-                example: !include examples/we-recommend-update.json                 
-          400:
-            description: The request failed validation
-          403:
-            description: The access failed authentication
-            body:
-              application/json:
-                example: !include examples/security.json
-          404:
-            description: The customer belonging to id provided could not be found
-            body:
-              application/json:
-                example: !include examples/update-not-found.json
     /marketingOptions:
       get:
         description: Get customer marketing options
